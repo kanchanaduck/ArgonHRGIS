@@ -1,0 +1,54 @@
+<div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--9">
+  <!-- Table -->
+    <div class="row">
+        <div class="col">
+            <div class="card shadow mx-1">
+                <div class="card-header border-0">
+                    Maintenance
+                </div>
+                <div class="card-body px-0">
+                    <ul>
+                        <li *ngFor="let menu of menus_maintenance">
+                        <a href="/#//locker">{{ menu.menu_code }} - {{ menu.menu_name }}</a>
+                        <div *ngIf="(menu.menu_code == 'PEF054_03B')" class="badge badge-danger badge-pill">Active</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-header border-0">
+                    Inquiry
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li *ngFor="let menu of menus_inquiry">
+                        <a href="/#//locker">{{ menu.menu_code }} - {{ menu.menu_name }}</a>
+                        <div *ngIf="(menu.menu_code == 'PEF054_03B')" class="badge badge-danger badge-pill">Active</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-header border-0">
+                    Report
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li *ngFor="let menu of menus_report">
+                        <a href="/#/locker">{{ menu.menu_code }} - {{ menu.menu_name }}</a>
+                        <div *ngIf="(menu.menu_code == 'PEF054_03B')" class="badge badge-danger badge-pill">Active</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

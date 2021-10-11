@@ -1,0 +1,149 @@
+<div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--9">
+  <!-- Table -->
+  <div class="row">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <h3 class="mb-0">Locker Management System</h3>
+        </div> 
+        <form class="row">
+          <div class="form-group mb-0 col-md-4 offset-2">
+            <div class="form-group row">
+              <label for="inputState" class="col-sm-4 col-form-label pt-1">Room No.</label>
+              <div class="col-sm-8">
+                <select id="inputState" class="form-control form-control-sm">
+                  <option selected>R01</option>
+                  <option>R02</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="form-check pt-1">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Locker ว่าง/พนักงานลาออก/ลาคลอด
+              </label>
+            </div>
+          </div>
+        </form>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Lock No</th>
+                <th scope="col">Sex</th>
+                <th scope="col">Emp No</th>
+                <th scope="col">Name - Surname</th>
+                <th scope="col">Dept</th>
+                <th scope="col">Entr Date</th>
+                <th scope="col">Resign</th>
+                <th scope="col">Category</th>
+                <th scope="col">Return Key</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let a of [1,2,3,4,5,6,7,8,9,10]">
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="{{ a }}">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="F">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="015947">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="อรนุช ชูรัตน์">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="Assembly3">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="22-MAR-2021">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm" value="Regular">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</div>
+        
+  <div class="row">
+        <div class="card shadow mt-2">
+        <div class="card-header border-0">
+          <h3 class="mb-0">Input</h3>
+        </div> 
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Lock No</th>
+                <th scope="col">Sex</th>
+                <th scope="col">Emp No</th>
+                <th scope="col">Name - Surname</th>
+                <th scope="col">Dept</th>
+                <th scope="col">Entr Date</th>
+                <th scope="col">Resign</th>
+                <th scope="col">Category</th>
+                <th scope="col">Return Key</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+                <td class="p-0">
+                  <input type="text" class="form-control form-control-sm">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-4 offset-4">
+      <button type="button" class="btn btn-secondary btn-sm">End</button>
+      <button type="button" class="btn btn-primary btn-sm">Update</button>
+      <button type="button" class="btn btn-secondary btn-sm">Clear</button>
+      <button type="button" class="btn btn-success btn-sm">Add</button>
+    </div>
+  </div>
+
+</div>
